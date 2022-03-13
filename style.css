@@ -1,0 +1,54 @@
+form {
+  border-radius: 3px;
+}
+body {
+  padding: 150px;
+  color: #272044;
+  background-image: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background-color: rgba(216, 205, 213, 0.781);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+button {
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: #a5a0a1;
+  margin: 0.8em;
+  transition: 200ms ease-in-out;
+}
+button:hover {
+  background-color: #85adc5;
+  color: white;
+}
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+
+input.submit-bar {
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: #e77e95;
+  margin: 0.8em;
+}
+p,
+li {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+}
