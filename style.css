@@ -8,10 +8,16 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .container {
   background-color: rgba(216, 205, 213, 0.781);
   border-radius: 10px;
   padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 button {
