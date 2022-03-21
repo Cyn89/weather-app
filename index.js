@@ -45,6 +45,9 @@ function searchWeather(response) {
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector("#temperature-description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
+    response.data.wind.speed
+  )} Km/H`;
 }
 
 function searchCity(city) {

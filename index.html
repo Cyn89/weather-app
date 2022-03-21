@@ -37,19 +37,25 @@
         </form>
 
         <div class="row">
-            <div class="col">
+            <div class="col-6">
+                <div class="mainicon weather-temp-icon">
                 <img src="images/day_snow.png" class="weather-icon" width=10% />
-                <br>
                 <ul>
-                    <li id="temperature"></li>
-                    <li id="temperature-description"></li>
+                    <li><strong id="temperature"> </strong></li>
+                    <li><span id="temperature-description"></span></li>
                     <li><span id="humidity"></span></li>
+                    <li><span id="wind"></span></li>
                 </ul>
             </div>
+            </div>
 
-            <div class="col-3">
-                <h2 id="city"> </h2>
-                <h3 class="date"> </h3>
+            <div class="col-6">
+                <ul>
+                <li id="city"> </li> <br>
+                <small><li> Last updated:</li></small>
+                <span class="date"> </span>
+                </ul>
+                
             </div>
         </div>
 
@@ -109,8 +115,9 @@
             </div>
         
     </div>
-    <small> <a href="https://github.com/Cyn89/weather-app">Open-source code</a> by Cynthia Del Aguila</small>
+    
     </div>
+    <small> <a href="https://github.com/Cyn89/weather-app">Open-source code</a> by Cynthia Del Aguila</small>
 
         <script src="index.js"></script>
         <br>

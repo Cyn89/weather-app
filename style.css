@@ -1,5 +1,6 @@
 form {
   border-radius: 3px;
+  padding-bottom: 20px;
 }
 body {
   padding: 150px;
@@ -7,6 +8,12 @@ body {
   background-image: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   font-family: "Poppins", sans-serif;
+}
+.weather-temp-icon strong {
+  color: rgb(19, 38, 82);
+  font-size: 28px;
+  line-height: 1px;
+  font-weight: 400;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -18,6 +25,12 @@ body {
   padding: 20px;
   max-width: 600px;
   margin: 30px auto;
+}
+.weather-temp-icon img {
+  margin-right: 10px;
+  float: left;
+  height: 73px;
+  width: 64px;
 }
 
 button {
@@ -53,6 +66,11 @@ input.submit-bar {
 p,
 li {
   text-transform: capitalize;
+}
+
+#city {
+  font-size: 30px;
+  line-height: 24px;
 }
 
 ul {
