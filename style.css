@@ -51,7 +51,7 @@ input.search-bar {
   border: none;
   outline: none;
   padding: 0.5em 1em;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 input.submit-bar {
@@ -59,7 +59,7 @@ input.submit-bar {
   border: none;
   outline: none;
   padding: 0.5em 1em;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #e77e95;
   margin: 0.8em;
 }
