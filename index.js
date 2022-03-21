@@ -45,7 +45,8 @@ function searchWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°C`;
+  )}`;
+
   document.querySelector(
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
@@ -82,10 +83,19 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+function displayFahrenheitTemperature(event){
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature*9)/5+32;
+  let temperatureElement=document.querySelector("#temperature");
+  temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
+}
+
 let submitBar = document.querySelector("form");
 submitBar.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+
 
 searchCity("New York");
