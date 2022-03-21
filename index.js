@@ -2,16 +2,22 @@ let now = new Date();
 let h3 = document.querySelector(".date");
 let date = now.getDate();
 let hours = now.getHours();
+if (hours<10) {
+  hours=`0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes<10) {
+  minutes=`0${minutes}`;
+}
 let year = now.getFullYear();
 let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
+  "Sun",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thur",
+  "Fri",
+  "Sat"
 ];
 let day = days[now.getDay()];
 
@@ -31,7 +37,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-h3.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}, ${year}`;
+h3.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
 
 ///
 
