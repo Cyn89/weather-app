@@ -40,6 +40,36 @@ let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
 
 ///
+// To display the days of the week shown in my forecast in js using html
+
+function displayForecast() {
+  let forecastElement=document.querySelector("#forecast");
+
+  let forecastHTML=`<div class="row">`;
+  let days = ["Sun","Mon", "Tue","Wed","Thu"];
+  days.forEach(function(day) {
+    forecastHTML=forecastHTML + `
+    
+            <div class="col">
+                <div class="weekday-forecast">
+                <div class="daily-weather-forecast">${day}</div>
+                <img src="images/day_partial_cloud.png" class="weather-icon" width=50% />
+                <div class="daily-weather-temperature">
+                        <span class="weather-forecast-description">Snow</span> </br>
+                        <span class="weather-forecast-temp-high">18° </span>
+                        <span> | </span>
+                        <span class="weather-forecast-temp-low">12° </span>
+                </div>
+                </div>
+            </div>
+     `;
+
+  });
+  
+
+     forecastHTML=forecastHTML + `</div>`;
+     forecastElement.innerHTML = forecastHTML;
+}
 
 function searchWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -108,6 +138,8 @@ function displayFahrenheitTemp(event){
 
 let celsiusTemp = null;
 
+
+
 let submitBar = document.querySelector("form");
 submitBar.addEventListener("submit", handleSubmit);
 
@@ -122,3 +154,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 
 searchCity("New York");
+displayForecast();
