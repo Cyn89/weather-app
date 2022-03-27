@@ -79,7 +79,18 @@ li:first-letter {
   font-size: 30px;
   line-height: 24px;
 }
-
+.weather-temp-icon .active {
+  color: rgb(85, 82, 82);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temp-icon .active:hover {
+  text-decoration: none;
+}
+#fahrenheit-link,
+#celsius-link {
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
 }
