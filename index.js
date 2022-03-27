@@ -42,7 +42,8 @@ h3.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
 ///
 // To display the days of the week shown in my forecast in js using html
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement=document.querySelector("#forecast");
 
   let forecastHTML=`<div class="row">`;
@@ -70,6 +71,12 @@ function displayForecast() {
      forecastHTML=forecastHTML + `</div>`;
      forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "9f8c20cce9ba65dfbd9f79a09894a608";
+  let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function searchWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -91,6 +98,8 @@ function searchWeather(response) {
 
   celsiusTemp = response.data.main.temp;
   
+  // to call lat & lon for the weekly forecast
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -154,4 +163,3 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 
 searchCity("New York");
-displayForecast();
