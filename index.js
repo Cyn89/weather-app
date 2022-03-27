@@ -15,7 +15,7 @@ let days = [
   "Mon",
   "Tue",
   "Wed",
-  "Thur",
+  "Thu",
   "Fri",
   "Sat"
 ];
