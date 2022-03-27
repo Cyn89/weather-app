@@ -133,8 +133,7 @@ li:first-letter {
   font-size: 30px;
   line-height: 24px;
 }
-#fahrenheit-link,
-#celsius-link {
+#fahrenheit-link {
   text-decoration: none;
   padding-top: 2px;
 }
