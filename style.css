@@ -81,18 +81,18 @@ body {
 .weather-forecast-description {
   text-transform: capitalize;
   font-size: 10px;
-  font-family: "Poppins", sans-serif;s
+  font-family: "Poppins", sans-serif;
 }
 small {
   opacity: 0.7;
 }
 button {
   color: #fff;
+  background: #a5a0a1;
   border: none;
   outline: none;
-  padding: 0.5em 1em;
+  padding: 0.3em 0.5em;
   border-radius: 8px;
-  background: #a5a0a1;
   margin: 0.8em;
   transition: 200ms ease-in-out;
 }
@@ -107,7 +107,7 @@ input.search-bar {
   border-radius: 10px;
 }
 
-input.submit-bar {
+input.search {
   color: #fff;
   border: none;
   outline: none;
@@ -116,13 +116,19 @@ input.submit-bar {
   background: #e77e95;
   margin: 0.8em;
 }
+input.search:hover {
+  background-color: #a5a0a1;
+}
 p:first-letter {
   text-transform: capitalize;
 }
 li:first-letter {
   text-transform: capitalize;
 }
-
+ul {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
 
 #temperature-description,
 #humidity,
@@ -136,12 +142,9 @@ li:first-letter {
 #fahrenheit-link {
   text-decoration: none;
   padding-top: 2px;
+  position: relative;
+  top: -8px;
 }
 #date-updated {
   opacity: 0.7;
-}
-
-ul {
-  list-style-type: none;
-  font-family: "Poppins", sans-serif;
 }
