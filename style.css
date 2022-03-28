@@ -97,7 +97,7 @@ button {
   transition: 200ms ease-in-out;
 }
 button:hover {
-  background-color: #85adc5;
+  background-color: #e77e95;
   color: white;
 }
 input.search-bar {
@@ -119,9 +119,7 @@ input.search {
 input.search:hover {
   background-color: #a5a0a1;
 }
-p:first-letter {
-  text-transform: capitalize;
-}
+
 li:first-letter {
   text-transform: capitalize;
 }
